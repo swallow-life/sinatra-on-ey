@@ -1,6 +1,10 @@
 require "bundler"
 Bundler.require
 
-get '/' do
-	"Hello world"
+module HelloWorld
+	class App < Sinatra::Base
+		get '/' do
+			"Hello world"
+		end
+	end
 end
